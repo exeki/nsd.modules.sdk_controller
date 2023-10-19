@@ -1,4 +1,4 @@
-package ru.ekazantsev.fakeApiController
+package ru.ekazantsev.sdkController
 
 import ru.ekazantsev.webApiComponents.WebApiException
 

@@ -1,18 +1,15 @@
-package ru.ekazantsev.sdkController
-
-import ru.ekazantsev.webApiComponents.WebApiException
-
-import static ru.ekazantsev.nsd_empty_fake_api.EmptyNaumenApiPlaceholder.*
-
+package ru.kazantsev.nsd.modules.sdk_controller
+import static ru.kazantsev.nsd.sdk.global_variables.ApiPlaceholder.*
 
 import groovy.transform.Field
 
-import ru.ekazantsev.webApiComponents.ResponsePrototype
-import ru.naumen.core.server.script.api.metainfo.IMetaClassWrapper
+import ru.kazantsev.nsd.modules.web_api_components.RequestProcessor
+import ru.kazantsev.nsd.modules.web_api_components.ProcessData
+import ru.kazantsev.nsd.modules.web_api_components.ProcessUtilities
+import ru.kazantsev.nsd.modules.web_api_components.ResponsePrototype
+import ru.kazantsev.nsd.modules.web_api_components.WebApiException
 
-import ru.ekazantsev.webApiComponents.ProcessData
-import ru.ekazantsev.webApiComponents.RequestProcessor
-import ru.ekazantsev.webApiComponents.ProcessUtilities
+import ru.naumen.core.server.script.api.metainfo.IMetaClassWrapper
 import ru.naumen.core.shared.dto.ISDtObject
 
 import javax.servlet.http.HttpServletRequest

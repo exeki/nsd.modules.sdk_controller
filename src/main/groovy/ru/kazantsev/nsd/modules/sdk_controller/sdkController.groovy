@@ -60,7 +60,7 @@ void getMetaClassInfo(HttpServletRequest request, HttpServletResponse response, 
                     String meta = utilities.getStringParameterElseThrow("meta")
                     IMetaClassWrapper metaClassWrapper = api.metainfo.getMetaClass(meta)
                     if(metaClassWrapper == null) {
-                        throw new WebApiException.NotFound("Метакласс $meta не найден")
+                        throw new WebApiException.NotFound("Cant find metaclass named $meta")
                     }
                     MetaClassWrapperDto result = new MetaClassWrapperDto(
                             fullCode: metaClassWrapper.getFqn().toString(),
